@@ -396,13 +396,12 @@ body * {
     margin-top: 13px;
     padding-left: 5px;
 }
-/*---------------------------------section 2----------------------------------------*/
+/*---------------------------------section 3----------------------------------------*/
 .section3 {
     position: relative;
     margin-top: 0;
     padding-top: 0;
-    height: 4570px;
-    background-color: #9d7979;
+    background-color:white;
 }
 
 .videoImage,
@@ -427,15 +426,15 @@ body * {
 }
 
 .playTriangle {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 22px 0 22px 37px;
-  border-color: transparent transparent transparent rgba(255, 255, 255, 1);
-  left: 50%;
-  margin-left: -10px;
-  position: absolute;
-  top: -20px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 22px 0 22px 37px;
+    border-color: transparent transparent transparent rgba(255, 255, 255, 1);
+    left: 50%;
+    margin-left: -10px;
+    position: absolute;
+    top: -20px;
 }
 
 .line {
@@ -464,3 +463,214 @@ body * {
     margin-left: -340px;
 }
 
+.inputForm {
+    width: 770px;
+    height: 51px;
+    margin-top: 530px;
+    left: 50%;
+    margin-left: -385px;
+    position: absolute;
+    justify-content: space-around;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.inputBox {
+    width: 230px;
+    height: 50px;
+}
+#name,
+#phone {
+    padding: 6px;
+    border: none;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+    padding-left: 0;
+}
+
+.section3button {
+    width: 200px;
+    height: 51px;
+}
+
+.section3checkbox {
+    width: 285px;
+    height: 18px;
+    position: absolute;
+    left: 50%;
+    margin-left: -143px;
+    margin-top: 613px;
+    background-color: rgb(187, 225, 225);
+
+}
+
+.personalData {
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(24, 24, 24, 1);
+    background-color: aqua;
+}
+
+.vectorBlock2 {
+    margin-top: 746px;
+    width: 120px;
+    height: 40px;
+    left: 50%;
+    margin-left: -60px;
+    position: relative;
+    display: inline-flex;
+}
+
+.textTypesofrepairheader {
+    width: 257px;
+    height: 26px;
+    margin-top: 707px;
+    position: absolute;
+    left: 50%;
+    margin-left: -129px;
+}
+
+.textTypesofrepair {
+    color: rgba(24, 24, 24, 1);    ;
+    font-family: Yeseva One;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: uppercase;   
+}
+
+
+.typesofrepairmainBox {
+    width: 1236px;
+    height: 608px;
+    left: 50%;
+    margin-left: -618px;
+    position: absolute;
+    justify-content: space-around;
+    display: flex;
+    margin-top: 31px;
+}
+
+.typesofrepairPic{
+    width: 392px;
+    height: 421px;
+}
+
+.typesofrepairContainer{
+    background-color: rgba(255, 255, 255, 1);
+    height: 286px;
+    width: 330px;
+    margin-left: 31px;
+    margin-top: -130px;
+    z-index: 1;
+    position: relative;
+}
+
+.typesofrepairBox{
+    height: 21px;
+    width: 210px;
+    font-family: Yeseva One;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(54, 54, 54, 1);
+    margin-left: 28px;
+    padding-top: 25px;
+    padding-bottom: 13px;
+}
+
+.typesofrepairPicLi {
+    width: 267px;
+    height: 191px;   
+    color: rgba(149, 149, 149, 1);
+    font-family: Nunito Sans;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 13px;
+}
+
+.section3Typesofrepairbutton{
+    font-family: Yeseva One;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+/*--------------------------------section4------------------------------------*/
+
+.section4pic1{
+    height: 645px;
+    width: 1006px;
+    margin-top: 763px;
+    position: absolute;
+}
+
+.section4pic1ListContainer{
+    width: 375px;
+    height: 474px;
+    margin-top: 880px;
+    margin-left: 249px;
+    position: absolute;
+}
+
+
+
+.section4pic1yellowCircleMainbox{
+    height: 42px; 
+    width: 42px;
+}
+
+.section4pic1ListBox{
+    width: 374px;
+    display: grid
+}
+
+.section4pic1yellowCircle{
+    height: 42px; 
+    width: 42px;
+    border-radius: 50%;
+    background-color: #E3B873;
+}
+
+.section4pic1Numbers{
+    height: 19px;
+    width: 33px;
+    font-family: Yeseva One;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgb(220, 68, 68);
+    margin: auto;
+    top: 50%;
+    position: relative;
+    
+    
+}
+
+.section4pic1Text{
+    width: 316px;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(54, 54, 54, 1);
+}
