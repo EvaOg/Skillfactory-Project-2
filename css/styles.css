@@ -481,11 +481,13 @@ body * {
     height: 50px;
 }
 #name,
-#phone {
+#phone,
+#email {
     padding: 6px;
     border: none;
     border-bottom: 1px solid rgba(54, 54, 54, 0.3);
     padding-left: 0;
+    width: 100%;
 }
 
 .section3button {
@@ -623,7 +625,7 @@ body * {
 .section4pic1ListContainer{
     width: 375px;
     height: 474px;
-    margin-top: 880px;
+    margin-top: 740px;
     margin-left: 249px;
     position: absolute;
 }
@@ -637,7 +639,8 @@ body * {
 
 .section4pic1ListBox{
     width: 374px;
-    display: grid
+    display: flex;
+    padding-top: 102px;
 }
 
 .section4pic1yellowCircle{
@@ -656,12 +659,10 @@ body * {
     line-height: 25px;
     letter-spacing: 0em;
     text-align: center;
-    color: rgb(220, 68, 68);
+    color: rgba(255, 255, 255, 1);
     margin: auto;
-    top: 50%;
-    position: relative;
-    
-    
+    top: 20%;
+    position: relative;  
 }
 
 .section4pic1Text{
@@ -673,4 +674,167 @@ body * {
     letter-spacing: 0em;
     text-align: left;
     color: rgba(54, 54, 54, 1);
+    display: flex;
+    align-items: center;
+    margin-left: 17px;
+}
+
+.section4BlacksquareContainer{
+    background-color: rgba(19, 19, 19, 1);
+    height: 509px;
+    width: 506px;
+    left: 834px;
+    top: 3470px;
+    border-radius: 0px;
+    position: absolute;
+}
+
+.section4InputFormHeader{
+    height: 47px;
+    width: 297px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 28px;
+    font-family: Nunito Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+.section4InputForm{
+    padding-top: 39px;
+    margin-left: 49px;
+    height: 243px;
+    width: 408px;
+    flex-flow: row wrap;
+    background-color:rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+}
+
+.section4InputBox{
+    height: 81px;
+}
+
+.section4InputBoxLabel{
+    background-color:rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    display: inline-block;
+}
+
+.section4Checkbox{
+    width: 259px;
+    margin-left: 49px;
+    margin-top: 20px;
+}
+
+.section4personalData{
+    
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.section4Button{
+    width: 213px;
+    height: 51px;
+    margin-top: 30px;
+    margin-left: 244px;
+    font-size: 13px;
+    font-style: normal;
+}
+
+.section4pigContainer{
+    margin-top: 1400px;
+    position: absolute;
+    margin-left: 866px;
+    display: flex;
+}
+
+
+.section4pigyellowCircle{
+    width: 72px;
+    height: 72px;
+    position: relative;
+    border-radius: 50%;
+    background-color: #E3B873;
+    }
+
+
+.section4pig{
+    width: 40px;
+    height: 33px;
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    left: 50%;
+    margin-left: -20px;
+}
+
+.section4dollar{
+    width: 8px;
+    height: 11px;
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    left: 50%;
+    margin-left: -4px;
+}
+
+.section4helpContainer{
+    margin-left: 25px;
+    width: 250px;
+    font-family: Nunito Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: auto;
+    padding-left: 25px;
+
+}
+
+
+
+/*--------------------------
+#name,
+#phone {
+    padding: 6px;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding-left: 0;
+}
+
+.section3button {
+    width: 200px;
+    height: 51px;
+}
+
+.section3checkbox {
+    width: 285px;
+    height: 18px;
+    position: absolute;
+    left: 50%;
+    margin-left: -143px;
+    margin-top: 613px;
+    background-color: rgb(187, 225, 225);
+
+}
+
+.personalData {
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(24, 24, 24, 1);
+    background-color: aqua;
 }
