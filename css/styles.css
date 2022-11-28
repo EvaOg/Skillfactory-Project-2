@@ -731,7 +731,6 @@ body * {
 }
 
 .section4personalData{
-    
     font-family: Nunito Sans;
     font-size: 14px;
     font-weight: 400;
@@ -800,6 +799,92 @@ body * {
     padding-left: 25px;
 
 }
+
+
+.section4lastblockbackgroundimage,
+.section4opassitypic{
+    height: 864px;
+    width: 1440px;
+    margin-top: 1730px;
+    position: absolute;
+}
+
+.section4lastblockheader{
+    height: 66px;
+    width: 411px;
+    font-family: Yeseva One;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: absolute;
+    margin-top: 1860px;
+    margin-left: 99px;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.section4lastblockul{
+    height: 516px;
+    width: 299px;
+    margin-left: 99px;
+    margin-top: 1980px;
+    position: absolute;
+    font-family: Nunito Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    list-style: none;
+    padding-inline-start: inherit;
+}
+
+
+.section4lastblockimage1{
+    height: 557.8831787109375px;
+    width: 354px;
+    margin-left: 588px;
+    margin-top: 1690px;
+    position: absolute;
+}
+
+.section4lastblockimage2{
+    height: 345px;
+    width: 354px;
+    margin-left: 588px;
+    margin-top: 2310px;
+    position: absolute;
+}
+
+.section4lastblockimage3{
+    height: 275px;
+    width: 354px;
+    margin-left: 985px;
+    margin-top: 1620px;
+    position: absolute;
+}
+
+.section4lastblockimage4{
+    height: 624px;
+    width: 354px;
+    margin-left: 985px;
+    margin-top: 1930px;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
