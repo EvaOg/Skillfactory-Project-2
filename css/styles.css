@@ -33,6 +33,35 @@ body * {
     text-align: center;
 }
 
+/* ------------------------- checkbox------------------------------ */
+
+.label {
+    cursor: pointer;
+  }
+
+.checkbox{
+    display: none;
+  }
+
+.checkboxDetails{
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+  }
+
+.checkboxDetails::before{
+    content:"\2714";
+    opacity: 0;
+    transition: .2s;
+  }
+
+.checkbox:checked + .checkboxDetails::before{
+    opacity: 1;
+  }
+
 /* -------------------------------------------------beggin of header------------------------------------------------------------------------ */
 
 .logo {
@@ -396,7 +425,7 @@ body * {
     margin-top: 13px;
     padding-left: 5px;
 }
-/*---------------------------------section 3----------------------------------------*/
+/*-------------------------------------------------------- section 3----------------------------------------*/
 .section3 {
     position: relative;
     margin-top: 0;
@@ -414,27 +443,13 @@ body * {
     position: absolute;
 }
 
-.yellowCircle {
+.section3Play {
     height: 85px; 
     width: 85px;
-    border-radius: 50%;
-    background-color: #E3B873;
     left: 50%;
     margin-left: -42px;
     position: absolute;
     top: -42px;
-}
-
-.playTriangle {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 22px 0 22px 37px;
-    border-color: transparent transparent transparent rgba(255, 255, 255, 1);
-    left: 50%;
-    margin-left: -10px;
-    position: absolute;
-    top: -20px;
 }
 
 .line {
@@ -480,6 +495,7 @@ body * {
     width: 230px;
     height: 50px;
 }
+
 #name,
 #phone,
 #email {
@@ -495,27 +511,16 @@ body * {
     height: 51px;
 }
 
-.section3checkbox {
-    width: 285px;
+.section3Checkbox {
+    width: 320px;
     height: 18px;
     position: absolute;
     left: 50%;
-    margin-left: -143px;
+    margin-left: -160px;
     margin-top: 613px;
-    background-color: rgb(187, 225, 225);
-
+    color: #131313;
 }
 
-.personalData {
-    font-family: Nunito Sans;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 23px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: rgba(24, 24, 24, 1);
-    background-color: aqua;
-}
 
 .vectorBlock2 {
     margin-top: 746px;
@@ -546,7 +551,6 @@ body * {
     text-align: center;
     text-transform: uppercase;   
 }
-
 
 .typesofrepairmainBox {
     width: 1236px;
@@ -613,7 +617,7 @@ body * {
 
 }
 
-/*--------------------------------section4------------------------------------*/
+/*-------------------------------- section 4 ------------------------------------*/
 
 .section4pic1{
     height: 645px;
@@ -629,8 +633,6 @@ body * {
     margin-left: 249px;
     position: absolute;
 }
-
-
 
 .section4pic1yellowCircleMainbox{
     height: 42px; 
@@ -728,15 +730,6 @@ body * {
     width: 259px;
     margin-left: 49px;
     margin-top: 20px;
-}
-
-.section4personalData{
-    font-family: Nunito Sans;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 23px;
-    letter-spacing: 0em;
-    text-align: left;
     color: rgba(255, 255, 255, 1);
 }
 
@@ -750,40 +743,18 @@ body * {
 }
 
 .section4pigContainer{
-    margin-top: 1400px;
-    position: absolute;
-    margin-left: 866px;
-    display: flex;
-}
-
-
-.section4pigyellowCircle{
-    width: 72px;
     height: 72px;
-    position: relative;
-    border-radius: 50%;
-    background-color: #E3B873;
-    }
-
+    width: 441px;
+    margin-left: 866px;
+    margin-top: 1400px;
+    display: flex;  
+    position: absolute;
+}
 
 .section4pig{
-    width: 40px;
-    height: 33px;
+    width: 72px;
+    height: 72px;
     position: absolute;
-    top: 50%;
-    margin-top: -16px;
-    left: 50%;
-    margin-left: -20px;
-}
-
-.section4dollar{
-    width: 8px;
-    height: 11px;
-    position: absolute;
-    top: 50%;
-    margin-top: -5px;
-    left: 50%;
-    margin-left: -4px;
 }
 
 .section4helpContainer{
@@ -796,10 +767,9 @@ body * {
     letter-spacing: 0em;
     text-align: left;
     margin: auto;
-    padding-left: 25px;
-
+    margin-left: 97px;
+    color: rgba(227, 184, 115, 1);
 }
-
 
 .section4lastblockbackgroundimage,
 .section4opassitypic{
@@ -842,7 +812,6 @@ body * {
     padding-inline-start: inherit;
 }
 
-
 .section4lastblockimage1{
     height: 557.8831787109375px;
     width: 354px;
@@ -875,51 +844,306 @@ body * {
     position: absolute;
 }
 
+/*-------------------------------- section 5 ------------------------------------*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*--------------------------
-#name,
-#phone {
-    padding: 6px;
-    border: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    padding-left: 0;
-}
-
-.section3button {
-    width: 200px;
-    height: 51px;
-}
-
-.section3checkbox {
-    width: 285px;
-    height: 18px;
-    position: absolute;
+.section5OurClientsHeader{
+    height: 26px;
+    width: 257px;
+    margin-left: -128px;
     left: 50%;
-    margin-left: -143px;
-    margin-top: 613px;
-    background-color: rgb(187, 225, 225);
-
+    margin-top: 2700px;
+    position: relative;
+    font-family: Yeseva One;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(24, 24, 24, 1);
+    text-transform: uppercase;
 }
 
-.personalData {
+.section5OurClientsContainer{
+    height: 28px;
+    width: 114px;
+    margin-left: -57px;
+    left: 50%;
+    margin-top: 15px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.section5OurClientHandspic{
+    height: 28px;
+    width: 34px;
+}
+
+.section5OurClientsText{
+    height: 57px;
+    width: 476px;
+    margin-left: -238px;
+    left: 50%;
+    margin-top: 24px;
     font-family: Nunito Sans;
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(54, 54, 54, 1);
+    position: relative;
+}
+
+.section5OurClientsContainerof3{
+    display: flex;
+}
+
+.section5OurClientsBox{
+    height: 428px;
+    width: 376px;
+    margin-left: 103px;
+    margin-top: 39px;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.section5OurClientpic1,
+.section5OurClientpic2,
+.section5OurClientpic3{
+    height: 97px;
+    width: 97px;
+    margin-top: 13px;
+    border-radius: 50%;
+}
+
+.section5OurClientsBoxHeader{
+    height: 42px;
+    width: 178px;
+    margin-top: 41px;
+    font-family: Yeseva One;
+    font-size: 18px;
     font-weight: 400;
     line-height: 23px;
     letter-spacing: 0em;
     text-align: left;
     color: rgba(24, 24, 24, 1);
-    background-color: aqua;
+    margin-left: 30px;
+}
+
+.section5OurClientsBoxText{
+    font-family: Nunito Sans;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(149, 149, 149, 1);
+}
+
+.section5OurClientsBoxYellowbox{
+    height: 54px;
+    width: 294px;
+    margin-top: 63px;
+    border-radius: 0px;
+    background-color: #E3B873; 
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+    display: flex;
+    justify-content: space-around;
+    margin-left: -20px;
+}
+
+.section5OurClientsBoxYellowboxVector1,
+.section5OurClientsBoxYellowboxVector2{
+    height: 28px;
+    width: 28px; 
+    margin-top: 11px;
+}
+
+.section5OurClientsBoxYellowboxVector1{
+    margin-left: 15px;
+}
+
+.section5OurClientsBoxYellowboxText1{
+    height: 20px;
+    margin-top: 17px;
+    color: white;
+    font-family: Yeseva One;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    margin-right: 15px;
+}
+
+.section5OurClientsBoxYellowboxVerticLine{
+    height: 54px;
+    width: 0.75px;
+    border-radius: 0px;
+    background-color: #FFFFFF; 
+}
+
+.section5LastblockVector1,
+.section5LastblockVector2{
+    height: 505px;
+    width: 1127px;
+    position: absolute;
+    margin-top: -100px;
+    opacity: 0.05;
+}
+
+.section5LastblockVector1{
+    margin-left: -300px;
+}
+
+.section5LastblockVector2{
+    margin-left: 810px;
+}
+
+.section5LastblockMain{
+    height: 954px;
+    width: 1440px;
+    margin-top: 354px;
+}
+
+.section5LastblockVectorBackground,
+.section5Lastblockopaccity{
+    height: 954px;
+    width: 1440px;
+    position: absolute;
+}
+
+.section5Lastblockopaccity{
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.97) 3.47%, rgba(24, 24, 24, 0.88) 100%);
+}
+
+/*------------------------------------------- Black Block ---------------------------------------------------------*/
+
+
+.section5blackBlock{
+    height: 445px;
+    width: 883px;
+    margin-top: -221px; 
+    left: 50%;
+    margin-left: -441px;
+    position: absolute;
+    background-color: rgba(24, 24, 24, 0.97);
+}
+
+.section5LastblockRectangleOpassity{
+    position: absolute;
+}
+
+.section5BlackblockInputformHeader{
+    height: 26px;
+    width: 257px;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    margin-top: 34px;
+    left: 50%;
+    margin-left: -128px;
+}
+
+.section5BlackblockinputBox{
+    height: 176px;
+    width: 520px;
+    left: 50%; 
+    margin-left: -260px;
+    margin-top: 106px;
+    display: flex;
+    flex-flow: row wrap;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#section5name,
+#section5phone{
+    height: 45px;
+    width: 231px;
+}
+
+#section5phone{
+    margin-left: 58px;
+}
+
+#section5question{
+    height: 45px;
+    width: 100%;
+}
+
+#section5Blackblocname,
+#section5Blackblocphone,
+#section5Blackblocquestion {
+    color: white;
+    background-color: rgba(54, 54, 54, 0);
+    padding: 6px;
+    border: none;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+    padding-left: 0;
+    width: 100%;
+}
+
+.section5Blackblocbutton{
+    left: 50%; 
+    margin-left: -100px;
+    margin-top: 360px;
+    position: absolute;
+}
+
+.section5checkbox{
+    width: 285px;
+    height: 18px;
+    left: 50%; 
+    margin-left: -143px;
+    margin-top: 291px;
+    position: absolute;
+    color: rgba(255, 255, 255, 1);
+}
+
+/*-------------------------------------------End of Black Block---------------------------------------------------------*/
+
+
+.section5LastblockYellowText{
+    height: 51px;
+    width: 589px;
+    margin-top: 274px;
+    left: 50%; 
+    margin-left: -295px;
+    font-family: Yeseva One;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(227, 184, 115, 1);
+    position: absolute;
+}
+
+.section5contactsyellowCircle{
+    height: 28px;
+    width: 71px;
+    left: 50%;
+    margin-left: -35px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    margin-top: 355px;
+}
+
+.section5Map{
+    height: 465px;
+    width: 925px;
+    left: 50%;
+    margin-left: -460px;
+    position: absolute;
+    margin-top: 420px;
 }
