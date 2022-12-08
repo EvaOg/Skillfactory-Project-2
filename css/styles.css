@@ -70,14 +70,19 @@ body * {
 
 .header {
     background: #131313;
+    width: 1440px;
 }  
 
-.header-content {
+.header-footer-content {
     display: flex;
     justify-content: space-between;
-    height: 83px;
     align-items: center;   
 }
+
+.header-content{
+    height: 83px;
+}
+
 
 .header-navigation {
     list-style: none;
@@ -109,6 +114,7 @@ body * {
     background-size: cover;
     height: 707px;
     position: relative;
+    width: 1440px;
 }
 
 .container-opacity {
@@ -186,6 +192,7 @@ body * {
     position: relative;
     margin-top: 0;
     padding-top: 0;
+    width: 1440px;
 }
 
 .section2-navigation {
@@ -988,18 +995,14 @@ body * {
 .section5LastblockVector1,
 .section5LastblockVector2{
     height: 505px;
-    width: 1127px;
+    width: 728px;
     position: absolute;
-    margin-top: -100px;
-    opacity: 0.05;
+    margin-top: -150px;
 }
 
-.section5LastblockVector1{
-    margin-left: -300px;
-}
 
 .section5LastblockVector2{
-    margin-left: 810px;
+    margin-left: 710px;
 }
 
 .section5LastblockMain{
@@ -1146,4 +1149,9 @@ body * {
     margin-left: -460px;
     position: absolute;
     margin-top: 420px;
+}
+
+.footer-container{
+    height: 133px;
+    width: 1440px;
 }
