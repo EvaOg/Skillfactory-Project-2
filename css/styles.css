@@ -1254,7 +1254,23 @@ button:hover {
     nav,
     .requestAcall,
     .section2-navigation,
-    .dots{
+    .dots,
+    .section4opassitypic,
+    .section4lastblockul,
+    .section4lastblockimage2,
+    .section4lastblockimage3,
+    .section4lastblockimage4,
+    .section4firstContainer,
+    .section5OurClientsHeader,
+    .section5OurClientsContainer,
+    .section5OurClientsText,
+    .section5OurClientsContainerof3,
+    .section5LastblockVector1,
+    .section5LastblockVector2,
+    .section5LastblockVectorBackground,
+    .section4lastblockimage1,
+    .section5LastblockRectangleOpassity,
+    .headermobile{
         display: none;
     }
   
@@ -1408,7 +1424,6 @@ button:hover {
     .section2OnlineControlBox{
         margin-left: -94px;
         margin-top: 780px;
-
     }
 
     .textOnlineControl{
@@ -1446,12 +1461,16 @@ button:hover {
 
     }
 
-    .inputForm{
+    .inputForm,
+    .section5BlackblockinputBox{
         width: 340px;
-        height: 311px;
         margin-left: -170px;
-        margin-top: 190px;
         justify-content: left;
+    }
+
+    .inputForm{
+        margin-top: 190px;
+        height: 311px;
     }
 
     .section3Checkbox{
@@ -1466,8 +1485,6 @@ button:hover {
     #phone{
         background-color: rgba(19, 19, 19, 1);
     }
-
-
 
     label{
         font-family: 'Nunito Sans';
@@ -1524,7 +1541,10 @@ button:hover {
     .typesofrepairPic{
         width: 340px;
         height: 365px;
-        padding-top: 30px;
+    }
+
+    .typesofrepairPicPadding{
+        padding-top: 70px;
     }
 
     .typesofrepairContainer{
@@ -1539,13 +1559,15 @@ button:hover {
         margin-bottom: 20px;
     }
 
-
     .section3Typesofrepairbutton{
+        width: 190px;
         height: 40px;
         line-height: 0;
         box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
         margin-top: -37px;
         position: absolute;
+        text-align: center;
+        padding: 0;
     }
 
     .typesofrepairPicLi{
@@ -1553,12 +1575,141 @@ button:hover {
         font-size: 13px;
     }
 
+/*----------------------- section 4 -----------------------------------------*/
 
+    .section5blackBlock {
+        margin-top: -421px;
+    }
 
+    .section5BlackblockInputformHeader{
+        margin-top: 155px;
+    }
+
+    .section5BlackblockinputBox{
+        margin-top: 206px;
+    }
+
+    .section4Bloc2{
+        width: 340px;
+        height: 242px;
+        margin-top: 1800px;
+        left: 50%;
+        position: absolute;
+        margin-left: -170px;
+        z-index: 1;
+    }
+
+    .section4lastblockheader{
+        text-align: center;
+        font-size: 22px;
+        line-height: 138.6%;
+        width: 375px;
+        left: 50%;
+        margin-left: -123px;
+        margin-top: -90px;
+    }
+
+    .section5LastblockMain{
+        margin-top: 2354px;
+    }
+
+    .section5Map{
+        height: 175px;
+        width: 340px;
+        margin-left: -170px;
+        margin-top: 210px;
+    }
+
+    .section5LastblockYellowText {
+        width: 340px;
+        font-size: 18px;
+        margin-left: -170px;
+        margin-top: 415px;
+    }
+
+    .section5contactsyellowCircle{
+        margin-top: 580px;
+    }
+
+    .section5Lastblockopaccity,
+    .section5blackBlock{
+        background: black;
+    }
+
+    .section5Lastblockopaccity,
+    .section5LastblockMain{
+        height: 663px;
+    }
+
+    .section5Blackblocbutton{
+        margin-top: 540px;
+        margin-left: -170px;
+        width: 340px;
+        font-style: normal;
+    }
+
+    .section5checkbox{
+        margin-top: 450px;
+        margin-left: -170px;
+        width: 340px;
+    }
+
+    #section5name,
+    #section5phone,
+    #section5question{
+        margin-left: 0;
+        height: 85px;
+        width: 340px;
+    }
+
+    #section5Blackblocname,
+    #section5Blackblocphone,
+    #section5Blackblocquestion{
+        font-size: 14px;
+        border-bottom: solid 1px white;
+    }
+
+    .arrow1{
+        margin-top: 330px;
+        margin-left: 0;
+        display: inline-flex;
+        position: absolute;
+        width: 320px;
+    }
+
+    .arrowLeft,
+    .arrowRight{
+        height: 36px;
+        width: 36px;
+        border-radius: 50%;
+        background-color: #E3B873;
+        margin-left: 10px;
+    }
+
+    .arrowRight{
+        margin-left: 230px;
+    }
+    
+    .arrowLeft::after{
+        left: 12px;
+        width: 10px;
+        height: 11px;
+        top: 12px;
+    }
+
+    .arrowRight::after{
+        left: 10px;
+        width: 10px;
+        height: 11px;
+        top: 12px;
+    }
+
+    .arrowLeft::before,
+    .arrowRight::before{
+        content: none;
+     }
 
 }
-
-
 
 
 
