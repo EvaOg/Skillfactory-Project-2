@@ -1172,7 +1172,6 @@ button:hover {
     background-color: rgba(54, 54, 54, 0);
     padding: 6px;
     border: none;
-    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
     padding-left: 0;
     width: 100%;
 }
