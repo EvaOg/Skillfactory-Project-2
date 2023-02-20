@@ -778,11 +778,18 @@ button:hover {
     width: 408px;
     flex-flow: row wrap;
     background-color:rgba(0, 0, 0, 0);
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .section4InputBox{
     height: 81px;
+}
+
+#section5Blackblocquestion::placeholder,
+#section5Blackblocphone::placeholder,
+#section5Blackblocname::placeholder,
+.section4InputBoxLabel::placeholder{
+    color: #FFFFFF;
 }
 
 .section4InputBoxLabel{
@@ -1146,7 +1153,7 @@ button:hover {
     display: flex;
     flex-flow: row wrap;
     position: absolute;
-    color: rgba(255, 255, 255, 0.982);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 #section5name,
