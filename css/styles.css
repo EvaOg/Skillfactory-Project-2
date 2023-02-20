@@ -533,6 +533,7 @@ button:hover {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    color: rgba(54, 54, 54, 0.5);
 }
 
 .inputBox {
@@ -540,6 +541,8 @@ button:hover {
     height: 50px;
 }
 
+#section3name,
+#section3phone,
 #name,
 #phone,
 #email {
@@ -550,9 +553,16 @@ button:hover {
     width: 100%;
 }
 
+#section3name,
+#section3phone{
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+}
+
 .section3button {
     width: 200px;
     height: 51px;
+    font-style: normal;
+    font-size: 13px;
 }
 
 .section3Checkbox {
@@ -1496,7 +1506,9 @@ button:hover {
     }
 
     #name,
-    #phone{
+    #phone,
+    #section3name,
+    #section3phone{
         background-color: rgba(19, 19, 19, 1);
         font-family: 'Nunito Sans';
         font-style: normal;
@@ -1526,7 +1538,7 @@ button:hover {
     }
 
     .section3Checkbox{
-        margin-top: 370px;
+        margin-top: 380px;
         margin-left: -170px;
         color: #FFFFFF;
     }
@@ -1673,10 +1685,13 @@ button:hover {
         margin-left: 0;
         height: 85px;
         width: 340px;
+        border-bottom: none;
     }
 
     #name,
     #phone,
+    #section3name,
+    #section3phone,
     #section5Blackblocname,
     #section5Blackblocphone,
     #section5Blackblocquestion{
@@ -1715,52 +1730,7 @@ button:hover {
         width: 39px;
         height: 39px;
     }
-/*-----
 
-
-    .arrow1{
-        margin-top: 330px;
-        margin-left: 0;
-        display: inline-flex;
-        position: absolute;
-        width: 320px;
-    }
-
-    .arrowLeft,
-    .arrowRight{
-        height: 36px;
-        width: 36px;
-        border-radius: 50%;
-        background-color: #E3B873;
-        margin-left: 10px;
-    }
-
-    .arrowRight{
-        margin-left: 230px;
-    }
-    
-    .arrowLeft::after{
-        left: 12px;
-        width: 10px;
-        height: 11px;
-        top: 12px;
-    }
-
-    .arrowRight::after{
-        left: 10px;
-        width: 10px;
-        height: 11px;
-        top: 12px;
-    }
-
-    .arrowLeft::before,
-    .arrowRight::before{
-        content: none;
-     }
-
-
-    
-    ---*/
 }
 
 
