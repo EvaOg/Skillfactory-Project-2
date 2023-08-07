@@ -1269,9 +1269,9 @@ button:hover {
   
   }
 
-/*------------------------- version 400 - 1450 -------------------*/
+/*------------------------- version 400 - 1320 -------------------*/
  
-@media (min-width: 300px) and (max-width: 1400px) {
+@media (min-width: 300px) and (max-width: 1320px) {
 
     .header-footer-content{
       margin-left: 5%;
