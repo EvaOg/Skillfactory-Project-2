@@ -214,7 +214,7 @@ button:hover {
 }
 
 .section2Containerwithpic{
-    width: 1171px;
+    width: 1250px;
     position: absolute;
 }
 
@@ -224,7 +224,7 @@ button:hover {
     justify-content: space-between;
     margin-left: 626px;
     padding-top: 107px;
-    margin-top: 0;
+    margin-bottom: -10px;
 }
 
 .section2-navigation_item:hover {
@@ -234,7 +234,7 @@ button:hover {
 
 .section2-navigation_item {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.458);
     margin: 0;
     font-family: 'Yeseva One';
     font-style: normal;
@@ -245,8 +245,8 @@ button:hover {
 }
 
 .image2 {
-    height: 482px; 
-    width: 679px;
+    height: 402px; 
+    width: 599px;
     margin-left: 665px;
     margin-top: 50px;
     position: absolute;
@@ -262,10 +262,10 @@ button:hover {
     letter-spacing: -0.07em;
     text-transform: uppercase;
     margin-left: 134px;
-    width: 253px;
+    width: 283px;
     height: 66px;
     position: absolute;
-    margin-top: 60px;
+    margin-top: -10px;
 }
 
 .section2-text2 {
@@ -278,7 +278,7 @@ button:hover {
     margin-left: 134px;
     width: 442px;
     height: 86px;
-    margin-top: 170px;
+    margin-top: 80px;
 }
 
 .section2-text3 {
@@ -305,7 +305,7 @@ button:hover {
 .section2Date {
     display: grid;
     grid-template-columns: 190px 190px;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-left: 134px;
     width: 400px;
 }
@@ -1360,11 +1360,13 @@ button:hover {
     }
 
     .title2{
-        width: 200px;
+        width: 230px;
         margin-left: 0;
         font-size: 22px;
         line-height: 138%;
         text-align: center;
+        margin-top: 70px;
+        margin-bottom: 0;
     }
 
     .section2-text2{
