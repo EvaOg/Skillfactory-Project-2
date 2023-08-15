@@ -49,13 +49,25 @@
             <div class="section2Containerwithpic">
                 <nav>
                 <ul class="section2-navigation">
-                    <li class="section2-navigation_item">Rostov-on-Don, Admiral</li>
-                    <li class="section2-navigation_item">Sochi Thieves</li>
-                    <li class="section2-navigation_item">Rostov-on-Don Patriotic</li>
+                    <li class="section2-navigation_item" id="admiral">Rostov-on-Don, Admiral</li>
+                    <li class="section2-navigation_item" id="thieves">Sochi Thieves</li>
+                    <li class="section2-navigation_item" id="patriotic">Rostov-on-Don Patriotic</li>
                 </ul>
             </nav>
-                    <h2 class="title2">Completed projects</h2>
-                    <img class="image2" src="Images/image2.1.png">
+                <h2 class="title2">Completed projects</h2>
+                <div class="slidesContainer">
+                    <ul id="slides">
+                        <li> 
+                            <img class="image2 slide active" src="Images/image2.1.png">
+                        </li>
+                        <li>
+                            <img class="image2 slide" src="Images/image2.2.png">
+                        </li>  
+                        <li> 
+                            <img class="image2 slide" src="Images/image2.3.png"> 
+                        </li>
+                    </ul>
+                </div>
                     <div class="section2-text2">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction 
                         market we have made happy more than 1000 families</div>
                 <div class="section2Date">
@@ -69,13 +81,13 @@
                     <div class="grid-item">Upon request</div>
                 </div>
                 <div class="arrow1">
-                    <div class="arrowLeft"></div>
-                    <div class="arrowRight"></div>
+                    <div class="arrowLeft prev"></div>
+                    <div class="arrowRight next"></div>
                 </div>
                 <div class="dots">
-                    <div class="dotLeft"></div>
-                    <div class="dotMiddle"></div>
-                    <div class="dotRight"></div>
+                    <div class="dotLeft dot"></div>
+                    <div class="dotMiddle dot"></div>
+                    <div class="dotRight dot"></div>
                 </div>
             </div>
         </div>
@@ -375,4 +387,5 @@
         </header>
     </main>
 </body>
+<script src="script.js"></script>
 </html>

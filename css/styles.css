@@ -1,5 +1,5 @@
  /* -------------------------------------------------------elements------------------------------------------------------------------------- */
-body {
+ body {
     margin: 0;
     font-family: 'Nunito Sans';
 }
@@ -214,7 +214,7 @@ button:hover {
 }
 
 .section2Containerwithpic{
-    width: 1250px;
+    width: 1275px;
     position: absolute;
 }
 
@@ -222,7 +222,7 @@ button:hover {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    margin-left: 626px;
+    margin-left: 665px;
     padding-top: 107px;
     margin-bottom: -10px;
 }
@@ -244,12 +244,34 @@ button:hover {
     text-decoration: none;
 }
 
-.image2 {
+/* .slidesContainer{
+    height: 402px; 
+    width: 599px;
+    margin-left: 665px;
+    margin-top: 50px; 
+} */
+ .image2 {
     height: 402px; 
     width: 599px;
     margin-left: 665px;
     margin-top: 50px;
+} 
+
+.slide {
+    background-color: rgba(19, 19, 19, 1);
+    color:#fff;
+    justify-content: center;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
     position: absolute;
+}
+.active {
+    opacity: 1;
+    z-index: 2;
 }
 
 .title2 {
@@ -351,6 +373,7 @@ button:hover {
     height: 40px;
     position: relative;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .arrowLeft::before,
@@ -408,18 +431,17 @@ button:hover {
     margin-left: -68px;
 }
 
-.dotLeft,
-.dotMiddle,
-.dotRight {
-    width: 5px;
-    height: 5px;
+.dot {
+    width: 7px;
+    height: 7px;
     margin-right: 17px;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 50%;
+    cursor: pointer;
 }
 
-.dotLeft{
-    background-color: white;
+.dot:hover {
+background-color: rgb(249, 247, 247);
 }
 
 /*-----------------------------------------------------end of arrow/dots------------------------------------------------------------------------*/
@@ -1741,5 +1763,10 @@ button:hover {
 
 }
 
+.image2 {
+    background-image: url("https://www.purinaone.ru/cat/sites/purinaone.ru/files/2019-03/kittens-cat3.jpg");
+}
 
-  
+
+/*////////////////////////////////////////////////////////*/
+
