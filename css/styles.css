@@ -268,16 +268,16 @@ button:hover {
     position: absolute;
 }
 
-.active {
+.slide.active {
     opacity: 1;
     z-index: 2;
 }
 
-.activeName {
+.section2-navigation_item.active {
     color: #E3B873;
 }
 
-.activeDot {
+.dot.active {
     background-color: #FFFFFF !important;
 }
 

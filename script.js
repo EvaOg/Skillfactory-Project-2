@@ -1,68 +1,95 @@
+
+const navAdmiral = document.querySelector("#admiral")
+const navThieves = document.querySelector("#thieves")
+const navPatriotic = document.querySelector("#patriotic")
+
+const navs = [navAdmiral, navThieves, navPatriotic];
 const slides = document.querySelectorAll('.slide');
-let currentSlide = 0;
+const dots = document.querySelectorAll('.dot');
+          // [dotLEft, dotMiddle, dotRight]
+
+const back = document.querySelector('.prev')
+const next = document.querySelector('.next')
+let currentSlideId = 0;
 let currentDot = 0;
 let currentName = 0;
 let prevslide;
 
-const back = document.querySelector('.prev')
-const next = document.querySelector('.next')
-
 
 back.addEventListener('click', () => {
-    slides[currentSlide].classList.remove("active");
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    slides[currentSlide].classList.add("active");
+    slides[currentSlideId].classList.remove("active");
+    dots[currentSlideId].classList.remove("active");
+    navs[currentSlideId].classList.remove("active");
 
-  })
+    currentSlideId = (currentSlideId - 1 + slides.length) % slides.length;
+
+    slides[currentSlideId].classList.add("active");
+    dots[currentSlideId].classList.add("active");
+    navs[currentSlideId].classList.add("active");
+})
+
+
   
-  next.addEventListener('click', () => {
-    slides[currentSlide].classList.remove("active");
-    currentSlide = (currentSlide+1) % slides.length;
-    slides[currentSlide].classList.add("active");
+next.addEventListener('click', () => {
+    slides[currentSlideId].classList.remove("active");
+    dots[currentSlideId].classList.remove("active");
+    navs[currentSlideId].classList.remove("active");
 
-  })
+    currentSlideId = (currentSlideId + 1) % slides.length;
 
-  const navAdmiral = document.querySelector("#admiral")
-  const navThieves = document.querySelector("#thieves")
-  const navPatriotic = document.querySelector("#patriotic")
+    slides[currentSlideId].classList.add("active");
+    dots[currentSlideId].classList.add("active");
+    navs[currentSlideId].classList.add("active");
+});
 
-
-  let navs = [navAdmiral, navThieves, navPatriotic];
-  const dots = document.querySelectorAll('.dot');
-  for(let i = 0; i < navs.length; i++) {
-      let nav = navs[i];
-      nav.addEventListener("click", () => {
-          for(let slide of slides) {
-            slide.classList.remove("active");
-          }
-          for (let el of navs) {
-            el.classList.remove("activeName")
-          }
-          currentSlide = i;
-          slides[i].classList.add("active");
-          navs[i].classList.add("activeName"); 
-    });
-
+// Add navs & dots clicks event listeneres
+for (let i = 0; i < navs.length; i++) {
+    let nav = navs[i];
     let dot = dots[i];
 
+    nav.addEventListener("click", (ev) => {
+        // let currentNav = ev.target;
+        // let currentId = currentNav.getAttribute("data-id");
+
+        // remove active class from navs, slides, dots
+        for (let j=0; j < slides.length; j++) {
+            slides[j].classList.remove("active");
+            navs[j].classList.remove("active")
+            dots[j].classList.remove("active")
+        }
+
+        currentSlideId = i;
+
+        slides[currentSlideId].classList.add("active");
+        navs[currentSlideId].classList.add("active")
+        dots[currentSlideId].classList.add("active")
+    });
+
+
     dot.addEventListener("click", () => {
-        for(let slide of slides) {
-          slide.classList.remove("active");
+        for (let j=0; j < slides.length; j++) {
+            slides[j].classList.remove("active");
+            navs[j].classList.remove("active")
+            dots[j].classList.remove("active")
         }
 
-        for (let dot of dots) {
-          dot.classList.remove("activeDot")
-        }
+        currentSlideId = i;
 
-        currentSlide = i;
-        currentDot = i;
-        slides[i].classList.add("active");
-        dots[i].classList.add("activeDot");  
-  });
-  }
+        slides[currentSlideId].classList.add("active");
+        navs[currentSlideId].classList.add("active")
+        dots[currentSlideId].classList.add("active")
+    });
+}
 
   
 
 
+function startup() {
+    currentSlideId = 0
+    slides[currentSlideId].classList.add("active");
+    dots[currentSlideId].classList.add("active");
+    navs[currentSlideId].classList.add("active");
+}
 
 
+startup();
