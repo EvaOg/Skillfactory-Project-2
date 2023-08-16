@@ -244,17 +244,15 @@ button:hover {
     text-decoration: none;
 }
 
-/* .slidesContainer{
+#slides {
+    list-style: none;
+}
+
+.image2 {
     height: 402px; 
     width: 599px;
     margin-left: 665px;
-    margin-top: 50px; 
-} */
- .image2 {
-    height: 402px; 
-    width: 599px;
-    margin-left: 665px;
-    margin-top: 50px;
+    margin-top: 40px;
 } 
 
 .slide {
@@ -269,9 +267,18 @@ button:hover {
     transition: opacity 1s;
     position: absolute;
 }
+
 .active {
     opacity: 1;
     z-index: 2;
+}
+
+.activeName {
+    color: #E3B873;
+}
+
+.activeDot {
+    background-color: #FFFFFF !important;
 }
 
 .title2 {
@@ -335,7 +342,7 @@ button:hover {
 .grid-item {
     background-color: rgba(0, 0, 0, 0);
     color: rgba(255, 255, 255, 1);
-    padding: 9px;
+    padding: 5px;
     font-size: 13px;
     text-align: left;
     font-family: 'Nunito Sans';
@@ -439,6 +446,7 @@ button:hover {
     border-radius: 50%;
     cursor: pointer;
 }
+
 
 .dot:hover {
 background-color: rgb(249, 247, 247);
@@ -1403,17 +1411,17 @@ background-color: rgb(249, 247, 247);
     }
 
     .image2{
-        margin-top: 250px;
+        margin-top: 240px;
         width: 340px;
         height: 241px;
-        margin-left: auto;
+        margin-left: 2.8%;;
         margin-right: auto;
     }
 
     .section2Date{
         grid-template-columns: 150px 160px;
         margin-top: 525px;
-        margin-left: 5%;
+        margin-left: 4%;
     }
 
     .grid-item{
@@ -1432,37 +1440,39 @@ background-color: rgb(249, 247, 247);
         display: inline-flex;
         position: absolute;
         width: 320px;
+        z-index: 3;
     }
 
     .arrowLeft,
     .arrowRight,
     .section5ArrowLeft,
     .section5ArrowRight{
-        height: 36px;
-        width: 36px;
+        height: 30px;
+        width: 30px;
         border-radius: 50%;
-        background-color: #E3B873;
-        margin-left: 10px;
+        background-color: #e3b87300;
+        margin-top: 10px;
     }
 
     .arrowRight{
-        margin-left: 230px;
+        margin-left: 250px;
     }
+
     
     .arrowLeft::after,
     .section5ArrowLeft::after{
-        left: 12px;
+        left: 11px;
         width: 10px;
         height: 11px;
-        top: 12px;
+        top: 10px;
     }
 
     .arrowRight::after,
     .section5ArrowRight::after{
-        left: 10px;
+        left: 9px;
         width: 10px;
         height: 11px;
-        top: 12px;
+        top: 10px;
     }
 
     .arrowLeft::before,
@@ -1762,11 +1772,6 @@ background-color: rgb(249, 247, 247);
     }
 
 }
-
-.image2 {
-    background-image: url("https://www.purinaone.ru/cat/sites/purinaone.ru/files/2019-03/kittens-cat3.jpg");
-}
-
 
 /*////////////////////////////////////////////////////////*/
 
